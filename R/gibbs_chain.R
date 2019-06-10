@@ -52,7 +52,7 @@ gibbs_chain = function(dataList, seed, N = 10000,
       
       for (j in 1:length(dataList)) {
         
-        dataList[[j]] = loc_update(dataList[[j]])
+        dataList[[j]] = loc_update(dataList[[j]], a.phi, b.phi)
         
         phi.vec[j] = dataList[[j]][[6]]
         
