@@ -56,11 +56,6 @@ gibbs_chain = function(dataList, seed, N = 10000,
         
         phi.vec[j] = dataList[[j]][[6]]
         
-        row.frame = cbind(row.frame, 
-                        c(dataList[[j]][[1]][,3],
-                          dataList[[j]][[2]],
-                          dataList[[j]][[6]]))
-        
       }
       
       #after each location is updated, update phi 
