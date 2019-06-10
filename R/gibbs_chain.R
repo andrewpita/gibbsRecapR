@@ -64,7 +64,7 @@ gibbs_chain = function(dataList, seed, N = 10000,
       #print(abphi)
       a.phi=abphi[1]
       b.phi=abphi[2]
-      M.phi[i,] = c(a.phi.b.phi)
+      M.phi[i,] = c(a.phi,b.phi)
       
       #grab all relevant parameters for this iteration
       #to be stored in matrix M
