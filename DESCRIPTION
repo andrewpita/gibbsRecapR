@@ -1,0 +1,24 @@
+Package: gibbsRecapR
+Type: Package
+Title: Functions for Bayesian Estimation with Capture-Recapture Data
+Version: 0.1.0
+Author: Andrew Pita
+Maintainer: <adrewpita@gmail.com>
+Description: Functions for extracting data and running a gibbs sampler chain.
+License: MIT License
+Encoding: UTF-8
+LazyData: true
+Imports:
+	dplyr,
+	BiasedUrn,
+	truncnorm,
+	grDevices,
+	graphics,
+	stats,
+	stringr,
+	hash,
+	magrittr,
+	ggplot2,
+	ggforce,
+	extraDistr
+RoxygenNote: 6.0.1
