@@ -3,6 +3,7 @@
 export(betahyperMH)
 export(gibbs_chain)
 export(loc_update)
+export(make_posterior)
 export(postlike)
 importFrom(extraDistr,rmvhyper)
 importFrom(stats,dbeta)
