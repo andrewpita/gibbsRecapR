@@ -4,7 +4,8 @@
 \alias{gibbs_chain}
 \title{Runs a gibbs sampler chain for capture recapture data}
 \usage{
-gibbs_chain(dataList, seed, N = 10000, atune = 0.25, btune = 1)
+gibbs_chain(dataList, seed, N = 10000, atune = 0.25, btune = 1,
+  parnames = NULL)
 }
 \arguments{
 \item{dataList}{list containing a locList for each location}
@@ -16,6 +17,8 @@ gibbs_chain(dataList, seed, N = 10000, atune = 0.25, btune = 1)
 \item{atune}{Tuning parameter for the Metropolis-Hastings update of beta hyperparameters. Default is 0.25.}
 
 \item{btune}{Tuning parameter for Metropolis-Hastings update of beta hyperparamters. Defaults is 1.}
+
+\item{parnames}{Vector containing all the parameter names, must coincide with the parameters in dataList}
 }
 \value{
 a numeric matrix

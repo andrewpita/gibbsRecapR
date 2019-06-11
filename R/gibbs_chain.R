@@ -7,6 +7,7 @@
 #' @param N number of iterations for the gibbs sampler, default is 10,000
 #' @param atune Tuning parameter for the Metropolis-Hastings update of beta hyperparameters. Default is 0.25.
 #' @param btune Tuning parameter for Metropolis-Hastings update of beta hyperparamters. Defaults is 1. 
+#' @param parnames Vector containing all the parameter names, must coincide with the parameters in dataList
 #' 
 #' @return a numeric matrix
 #' 
@@ -15,7 +16,7 @@
 
 
 gibbs_chain = function(dataList, seed, N = 10000, 
-                       atune = 0.25,btune = 1) {
+                       atune = 0.25,btune = 1, parnames = NULL) {
   
     
     #set arbitrary initial starting values for each N.location
@@ -91,6 +92,11 @@ gibbs_chain = function(dataList, seed, N = 10000,
     
     #burn first half of observations
     M.burn = M[round((nrow(M)/2)):nrow(M),]
+    
+    if (!is.null(parnames) & length(parnames) == ncol(M.burn)) {
+      
+      colnames(M.burn) = parnames
+    }
     
     return(M.burn)
 }
