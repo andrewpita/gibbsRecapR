@@ -16,4 +16,6 @@ make_posterior = function(chainList) {
     
   }
   
+  return(posterior)
+  
 }
