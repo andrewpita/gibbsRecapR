@@ -22,14 +22,14 @@ The first required input for gibbs_chain() is a list of the relevant data (dataL
 
 The location specific list consists of elements that must be within this format and order:
 
-*a dataframe consisting of of three columns.  The first column contains the marginal totals for each of the data sources, with the first being the survey.  The second column contains the overlaps between the survey and the other sources, such that the overlap between the survey and source B is in the same row as the marginal total of source B in column 1.  The number of subjects within all sources and the survey is placed in the same row (row 1) as the marginal total of survey participants. The third column contains an arbitrary initial vector of inclusion probabilities for each source. 
+* a dataframe consisting of of three columns.  The first column contains the marginal totals for each of the data sources, with the first being the survey.  The second column contains the overlaps between the survey and the other sources, such that the overlap between the survey and source B is in the same row as the marginal total of source B in column 1.  The number of subjects within all sources and the survey is placed in the same row (row 1) as the marginal total of survey participants. The third column contains an arbitrary initial vector of inclusion probabilities for each source. 
 
-*The second element of the list is an arbitary initial starting value for the total number of key population members in this location. 
+* The second element of the list is an arbitary initial starting value for the total number of key population members in this location. 
 
-*The third element is the total number of people within this location who meet the inclusion criteria for participating in the survey, aside from key population member status.  In other words, if to participate in the survey one had to be older than 18, female, and gained income from sex work in the last year, than this number is the total number of females older than 18 in the general population. 
+* The third element is the total number of people within this location who meet the inclusion criteria for participating in the survey, aside from key population member status.  In other words, if to participate in the survey one had to be older than 18, female, and gained income from sex work in the last year, than this number is the total number of females older than 18 in the general population. 
 
-*The fourth and fifth elements respectively are the alpha and beta values for the Beta prior placed on the inclusion probabilities. 
+* The fourth and fifth elements respectively are the alpha and beta values for the Beta prior placed on the inclusion probabilities. 
 
-*The sixth element is an arbitary initial starting value for the key population proportion in this location. 
+* The sixth element is an arbitary initial starting value for the key population proportion in this location. 
 
 
