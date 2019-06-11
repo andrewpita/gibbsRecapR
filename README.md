@@ -32,4 +32,4 @@ The location specific list consists of elements that must be within this format 
 
 * The sixth element is an arbitary initial starting value for the key population proportion in this location. 
 
-
+parnames is an optional input argument to gibbs_chain() that will provide column names for the matrix containing chain that is output by the function.  This vector of parameter names must be in the same order as the information passed within each element of dataList.  For example if the first element of dataList contains a dataframe with data sources in column in the order of survey, source B, and source C, then parnames would consist of the name for the inclusion probability for the survey, the inclusion probability for source B, the inclusion probability for source C, the parameter name for the number of key population members at that location, and the parameter name for the key population proportion in that location.  This would continue for each element of dataList, with the requirement that the final two parameter names refer to the alpha and beta hyper-parameters belonging to the Beta prior placed on the overall key population proportion. 
